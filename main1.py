@@ -15,7 +15,7 @@ MARGIN = 30
 SCREEN_TITLE = "Particle Exercise"
 
 PARTICLE_MIN_SCALE = 0.02
-PARTICLE_MAX_SCALE = 0.10
+PARTICLE_MAX_SCALE = 0.11
 PARTICLE_MIN_X = -20
 PARTICLE_MAX_X = 20
 PARTICLE_VELOCITY_X = 1
@@ -41,16 +41,16 @@ class Particle(arcade.Sprite):
         self.color_pos = 0
 
         self.particle_colors = [
-            (open_color.red_5, 10)
+            (open_color.red_9, 12)
             ,(open_color.red_4, 5)
             ,(open_color.red_3, 6)
             ,(open_color.red_2, 7)
-            ,(open_color.red_1, 8)
-            ,(open_color.orange_2, 8)
-            ,(open_color.orange_3, 7)
-            ,(open_color.orange_5, 6)
-            ,(open_color.yellow_1, 5)
-            ,(open_color.yellow_2, 10)
+            ,(open_color.red_7, 8)
+            ,(open_color.yellow_6, 8)
+            ,(open_color.yellow_7, 7)
+            ,(open_color.yellow_5, 6)
+            ,(open_color.orange_8, 5)
+            ,(open_color.orange_7, 10)
         ]
         (self.color, self.lifetime) = self.particle_colors[self.color_pos]
         self.alive = True
